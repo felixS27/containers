@@ -42,6 +42,8 @@ RUN apt-get purge -y \
 # Stage 2: Runtime
 FROM nvidia/cuda:12.8.1-base-ubuntu24.04
 
+LABEL org.opencontainers.image.source="https://github.com/felixS27/containers"
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install necessary runtime libraries
